@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="index" template="/WEB-INF/layout/index.jsp">
+        <put-attribute name="title" value="NODE - A Simple Blog" />
+        <put-attribute name="header" value="/WEB-INF/views/home/includes/header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/home/index.jsp" />
+        <put-attribute name="sidebar" value="/WEB-INF/views/home/sidebar.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/home/includes/footer.jsp" />
+    </definition>
+    <definition name="login" template="/WEB-INF/layout/login.jsp">
+        <put-attribute name="title" value="NODE - A Simple Blog" />
+        <put-attribute name="header" value="/WEB-INF/views/home/includes/header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/home/login.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/home/includes/footer.jsp" />
+    </definition>
+    <definition name="register" template="/WEB-INF/layout/login.jsp">
+        <put-attribute name="title" value="NODE - A Simple Blog" />
+        <put-attribute name="header" value="/WEB-INF/views/home/includes/header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/home/register.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/home/includes/footer.jsp" />
+    </definition>
+    <definition name="dashboard.base" template="/WEB-INF/layout/dashboard.jsp">
+        <put-attribute name="title" value="NODE - A Simple Blog" />
+        <put-attribute name="pageName" value="dashboard" />
+        <put-attribute name="header" value="/WEB-INF/views/user/includes/header.jsp" />
+        <put-attribute name="left_menu" value="/WEB-INF/views/user/includes/left_menu.jsp" />
+        <!--<put-attribute name="footer" value="/WEB-INF/views/home/includes/footer.jsp" />-->
+    </definition>
+    <definition name="dashboard" extends="dashboard.base">
+        <put-attribute name="content" value="/WEB-INF/views/user/home.jsp" />
+    </definition>
+    <definition name="account" extends="dashboard.base">
+        <put-attribute name="pageName" value="account" />
+        <put-attribute name="content" value="/WEB-INF/views/user/account.jsp" />
+    </definition>
+    <definition name="edit_account" extends="dashboard.base">
+        <put-attribute name="pageName" value="account" />
+        <put-attribute name="content" value="/WEB-INF/views/user/edit_account.jsp" />
+    </definition>
+    <definition name="update_password" extends="dashboard.base">
+        <put-attribute name="pageName" value="account" />
+        <put-attribute name="content" value="/WEB-INF/views/user/update_password.jsp" />
+    </definition>
+    <definition name="follower" extends="dashboard.base">
+        <put-attribute name="pageName" value="follower" />
+        <put-attribute name="content" value="/WEB-INF/views/user/follower.jsp" />
+    </definition>
+</tiles-definitions>

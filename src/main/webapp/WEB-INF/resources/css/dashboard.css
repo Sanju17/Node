@@ -1,0 +1,268 @@
+/* 
+    Created on : Jul 19, 2017, 9:44:17 PM
+    Author     : Sangharsha
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+div#header {
+    width: 100%;
+    height: 50px;
+    background: #2c3e50;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.logo a span {
+    font-weight: 200;
+    color: #ddd;
+}
+
+div#container {
+    width: 100%;
+    margin: 0 auto 0;
+}
+
+.sidebar {
+    position:absolute;
+    width: 250px;
+    background-color: #171717;
+    display: block;
+    float: left;
+}
+
+.content {
+    width: auto;
+    margin-left: 250px;
+    height: 100%;
+    background-color: #fff;
+    padding: 15px;
+}
+
+ul#nav {
+
+}
+
+ul#nav li {
+    list-style: none;
+}
+
+ul#nav li a {
+    color: #ccc;
+    display: block;
+    padding: 12px;
+    font-size: 0.85em;
+    border-bottom: 1px solid #0A0A0A;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
+
+ul#nav li a:hover {
+    text-decoration: none;
+    background-color: #030303;
+    color: #fff;
+    padding-left: 30px;
+}
+
+ul#nav li a.selected {
+    background-color: #030303;
+    color: #fff;
+}
+
+.content p {
+    color: #424242;
+    font-size: 0.73em;
+}
+
+.divider {
+    background: #fff;
+}
+
+.hr {
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+div.box {
+    border: 1px solid #bce8f1;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+div.box div.box-header {
+    background: #d9edf7;
+    margin: 0 auto;
+    padding: 5px 0 5px 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius:5px;
+}
+
+div.box div.box-header p {
+    color: #31708f;
+    margin: 0 auto;
+    font-size: 1.17em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+div.account-info {
+    margin-top: 20px;
+    overflow: auto;
+}
+
+div.pro-pic {
+    float: left;
+    margin-left: 20px;
+    padding: 0;
+}
+
+img.img-circle {
+    height: 150px;
+    width: 150px;
+    border: 2px solid #96ceb4;
+    border-radius: 50%;
+}
+
+.account-details{
+    float: right;
+    width: calc(100% - 300px);
+    margin: 20px 20px 0 0;
+}
+
+div.account-edit{
+    overflow: auto;
+}
+
+.form-label{
+    margin-top: 5px;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 8px 10px;
+    color: #f1e5e6;
+    background-color: #d3394c;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid currentColor;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #722040;
+}
+
+.inputfile:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.clear {
+    clear: both;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+form#update_password_form {
+    margin: 0 20px;
+}
+
+.follower-info {
+    margin: 20px;
+}
+
+.card_container {
+    max-width: 990px
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    margin-right: 30px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.card img {
+    height: 100px;
+    width: 300px;
+}
+.card_info_container {
+    padding: 0 16px;
+}
+
+p.title {
+    color: grey;
+    font-size: 1.2em;;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+#errorMessage {
+    color: red;
+}

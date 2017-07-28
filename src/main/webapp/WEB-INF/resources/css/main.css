@@ -1,0 +1,137 @@
+/*
+    Author: Sangharsha Chaulagain
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    background-image: url("../images/background_image.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.mainContainer {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.divider {
+    background: #fff;
+}
+
+.hr {
+    width: 90%;
+    display: block;
+    height: 1px;
+    border: 0;
+    background: #fff;
+    border-top: 1px solid #eee;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+}
+
+#mainHeader {
+    width: 100%;
+    height: 10em;
+    margin: 0 auto;
+    background-color: #fff;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#toolbar {
+    width: 100%;
+    height: 3em;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+#profile a{
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    display: block;
+    padding: 10px 20px;
+    color: #424242;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+#profile a:hover {
+    border-bottom: 2px solid #424242;
+    padding-bottom: 7px;
+}
+
+.nav {
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    padding: 10px 20px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #424242;
+    padding-bottom: 7px;
+}
+
+#mainContent {
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#blogPosts {
+    width: 55%;
+    height: 100%;
+    margin-right: 5%;
+    background-color: #fef;
+    float: left;
+}
+
+#rightSection {
+    width: 40%;
+    height: 100%;
+    background-color: #343;
+    float: right;
+}
+
+#mainFooter {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    background-color: #343;
+    left: 0;
+    bottom: 0;
+}
+
+#mainFooter p {
+    line-height: 1.5em;
+    margin-left: 2em;
+}
